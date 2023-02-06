@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "354957915011",
+    "project_id": "mobileappscoursework-b20e5",
+    "storage_bucket": "mobileappscoursework-b20e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354957915011:android:b3a80e749797d1895c7cb6",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354957915011-ne5rj9knvkq9lvdihomfu4b2l6ibhavs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbd7sPtUckzC88PUmDp41R2JNAenKfC4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354957915011-ne5rj9knvkq9lvdihomfu4b2l6ibhavs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

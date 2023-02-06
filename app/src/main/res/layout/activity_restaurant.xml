@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:content=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/restaurantToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextColor="@color/design_default_color_on_primary"
+        android:background="@color/design_default_color_primary"
+        app:navigationIcon='@drawable/baseline_close_24'
+        app:title="@string/restaurantTitle">
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/restaurantImage"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/restaurant1"
+            android:padding="5dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/restaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/restaurantName"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <RatingBar
+                android:id="@+id/restaurantRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="4"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/restaurantSeeLocationOnMapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/see_on_map"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textColor="@color/design_default_color_secondary_variant"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/restaurantDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/restaurantDesc"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/reviews"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/restaurantLeaveReviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/leaveReview"
+            android:layout_gravity="center|end"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/design_default_color_secondary_variant"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/restaurantEditRestaurantButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/edit_restaurant"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:visibility="gone"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <view class="androidx.recyclerview.widget.RecyclerView"
+        android:id="@+id/restaurantRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

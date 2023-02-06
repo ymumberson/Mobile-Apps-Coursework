@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_the_app"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:padding="30dp"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/loginEmailTextInput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/loginPasswordTextInput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:inputType="textPassword"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginCreateProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginGuestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_as_guest"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:content=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/createProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/createProfileEmailDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="0dp"
+        android:text="@string/emailValidationText"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createProfilePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createProfileConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/createProfilePasswordDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="0dp"
+        android:text="@string/passwordValidationText"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createProfileForename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/forename"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createProfileSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/surname"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.2"
+        android:padding="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createProfileCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_weight="0.5"/>
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createProfileSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_gravity="center|bottom"
+            android:padding="10dp"
+            android:layout_weight="0.5"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

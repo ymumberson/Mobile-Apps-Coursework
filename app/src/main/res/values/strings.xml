@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Pog Food</string>
+    <string name="reviewText1">The food was amazing! I ordered the steak and it came within 10 minutes!! I will definitely be going here again and this time I will be bringing the whole family. A must go place for anyone looking for an authentic English experience!!!!!</string>
+    <string name="reviewText2">Okay so first of all I don\'t really love fish so maybe this is a biased review but the food wast quite worth the price. It cost around £20 per dish and honestly you could get the same kind of quality for around £10. Maybe if I loved fish then I could taste the difference but it just wasn\'t for me.</string>
+    <string name="restaurantName">Joe\'s Restaurant</string>
+    <string name="restaurantDesc">Welcome to Joe\'s restaurant. We\'re a small local restaurant and we\'d love for you to come along!</string>
+    <string name="restaurantAverageRating">Average Rating: 4</string>
+    <string name="reviews">Reviews</string>
+    <string name="rating5">Rating: 5</string>
+    <string name="restaurantLocation">Swansea, United Kingdom</string>
+    <string name="reviewRatingTitle">How was your experience?</string>
+    <string name="reviewExperienceTitle">Tell us about your experience.</string>
+    <string name="reviewPictureTitle">Would you like to add an image?</string>
+    <string name="reviewLocationTitle">Would you like to add a location?</string>
+    <string name="reviewPictureLocationTitle">Would you like to add an image or location?</string>
+    <string name="addLocation">Add Location</string>
+    <string name="postReview">Post Review</string>
+    <string name="leaveReview">Leave Review</string>
+    <string name="testEmail">user1@outlook.com</string>
+    <string name="testPassword">password1</string>
+    <string name="settingsAction">Settings</string>
+    <string name="profileAction">Profile</string>
+    <string name="logoutAction">Logout</string>
+    <string name="homeTitle">Home</string>
+    <string name="profileTitle">Profile</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="restaurantTitle">Restaurant</string>
+
+    <string-array name="profileTabTitles">
+        <item>My Profile</item>
+        <item>My Restaurants</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="emailValidationText">Your email must contain the \'@\' symbol</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="passwordValidationText">Your password can contain numbers etc</string>
+    <string name="forename">Forename</string>
+    <string name="surname">Surname</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="cuisine">Cuisine</string>
+    <string name="description">Description</string>
+    <string name="add_image">Add Image</string>
+    <string name="no_location_added">No Location Added</string>
+    <string name="add_location">Add Location</string>
+    <string name="create_restaurant">Create Restaurant</string>
+    <string name="title">Title</string>
+    <string name="change_picture">Change Picture</string>
+    <string name="bio">Bio</string>
+    <string name="see_on_map">See On Map</string>
+    <string name="date_time">Date/Time</string>
+    <string name="edit_review">Edit Review</string>
+    <string name="edit_restaurant">Edit Restaurant</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="user_name">USER NAME</string>
+    <string name="my_reviews">My Reviews</string>
+    <string name="test_login">TEST LOGIN</string>
+    <string name="welcome_to_the_app">Welcome to the app</string>
+    <string name="username">Username</string>
+    <string name="continue_as_guest">Continue As Guest</string>
+    <string name="location">Location</string>
+    <string name="sampleReviewTitle">Amazing food</string>
+    <string name="view_full">View Full</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="confirm">Confirm</string>
+    <string name="share">Share</string>
+    <string name="submit_changes">Submit Changes</string>
+    <string name="invalidReviewMessage">Review is invalid, make sure you\'ve written a title and a description</string>
+    <string name="invalidEmailOrPassword">Email or password is invalid</string>
+    <string name="noNameEntered">Please ensure you enter a forename and surname</string>
+</resources>

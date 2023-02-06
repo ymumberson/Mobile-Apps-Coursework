@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:content=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profileProfilePicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/baseline_photo_camera_24"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profileEditProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/profileUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/user_name"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/email"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/profileBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bio"
+        android:textSize="12sp"
+        android:padding="10dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/my_reviews"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:padding="10dp"/>
+    <view class="androidx.recyclerview.widget.RecyclerView"
+        android:id="@+id/profileMyReviewsRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
