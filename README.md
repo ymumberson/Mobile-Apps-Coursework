@@ -1,5 +1,5 @@
 # Mobile Apps Coursework
- A restaurant review app for android, created as part of a coursework.
+ A restaurant review app for android, created as part of a coursework. The app uses Firebase so it has cloud-based authentication and storage.
 
 Below are some screenshots of the various views.
 
